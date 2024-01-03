@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "13a03e60-c5c3-4423-ab75-b62f9349b30c",
+		"name": "HCI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1801855"
+	},
+	"item": [
+		{
+			"name": "AddHospital",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Saint Vincent's\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hciwebapi.azurewebsites.net/api/hospitals/addhospital",
+					"protocol": "https",
+					"host": [
+						"hciwebapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"hospitals",
+						"addhospital"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddPatient",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"firstName\": \"Ahsoka\",\r\n  \"lastName\": \"Tano\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hciwebapi.azurewebsites.net/api/patients/addpatient",
+					"protocol": "https",
+					"host": [
+						"hciwebapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"patients",
+						"addpatient"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddVisit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"visitDate\": \"2023-07-13T09:07:38.267Z\",\r\n  \"createdDate\": \"2023-07-13T09:07:38.267Z\",\r\n  \"patientId\": \"13a01a02-fad7-46ea-9ee2-08dc0a20c056\",\r\n  \"hospitalId\": \"33ec73e4-0eb0-43fd-8ee9-08dc0a21c65c\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hciwebapi.azurewebsites.net/api/visits/addvisit",
+					"protocol": "https",
+					"host": [
+						"hciwebapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"visits",
+						"addvisit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetHospitals",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hciwebapi.azurewebsites.net/api/hospitals",
+					"protocol": "https",
+					"host": [
+						"hciwebapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"hospitals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetPatients",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hciwebapi.azurewebsites.net/api/patients",
+					"protocol": "https",
+					"host": [
+						"hciwebapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"patients"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetVisits",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hciwebapi.azurewebsites.net/api/visits",
+					"protocol": "https",
+					"host": [
+						"hciwebapi",
+						"azurewebsites",
+						"net"
+					],
+					"path": [
+						"api",
+						"visits"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
